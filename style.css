@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("https://images.unsplash.com/photo-1513519245088-0e12902e5a38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1558051815-0f18e64e6280?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+
+}
+
+h1 {
+    padding-bottom: 2vh;
+    padding-top: 5vh;
+    text-align: center;
+    font-size: 4em;
+    color: brown;
+}
+
+nav {
+    position: fixed;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+
+}
+
+nav a {
+    color: darkred;
+    font-family: 'Comfortaa', cursive;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: violet;
+}
+
+nav::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-color: #e5e5f7;
+    opacity: 0.7;
+    background-image: radial-gradient(circle at center center, #a0d96f, #e5e5f7), repeating-radial-gradient(circle at center center, #a0d96f, #a0d96f, 10px, transparent 20px, transparent 10px);
+    background-blend-mode: multiply;
+}
+
+form {
+    padding: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+form button {
+    width: 30%;
+    padding: 5px;
+    background-color: #088db5;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.2s;
+}
+
+form button:hover {
+    background: #08b8ee;
+}
+
+form button:active {
+    box-shadow: inset 3px 2px 15px -5px #252525;
+}
+
+article {
+    box-sizing: border-box;
+    margin: 7.5vh;
+    padding-top: 2vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 5vw;
+    background-color: #e5e5f7;
+    background-image: linear-gradient(#a0d96f 2px, transparent 2px), linear-gradient(90deg, #a0d96f 2px, transparent 2px), linear-gradient(#a0d96f 1px, transparent 1px), linear-gradient(90deg, #a0d96f 1px, #e5e5f7 1px);
+    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+
+}
+
+article img {
+    padding-block: 2vw;
+    height: 200px;
+}
+
+footer {
+    margin: 2vw;
+}
